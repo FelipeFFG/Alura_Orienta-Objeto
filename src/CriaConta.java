@@ -1,6 +1,7 @@
 public class CriaConta {
 
     public static void main(String[] args) {
+        /*
         //primeira conta
        Conta primeiraConta = new Conta();  //instanciação de uma conta
        primeiraConta.saldo =200;   // atribuição de saldo a instacia primeiraConta
@@ -17,6 +18,22 @@ public class CriaConta {
        segundaConta.saldo = 50;
         System.out.println("primeira conta tem " + primeiraConta.saldo + " reais");
        System.out.println("segunda conta tem " + segundaConta.saldo + " reais");
+*/
+
+        Conta primeiraConta = new Conta();
+        primeiraConta.saldo=300;
+        System.out.println("primeira conta  "+primeiraConta.saldo + " saldo ");
+
+        Conta segundaConta = primeiraConta;   //referencia o espaço de memoria  da primeiraConta para a segundaConta, ou seja as duas contas apontam para o mesmo objeto.
+        segundaConta.saldo = 9000;
+        System.out.println(segundaConta.saldo);
+
+        System.out.println("primeira conta  "+primeiraConta.saldo + " saldo ");
+        
+        System.out.println(primeiraConta);
+        System.out.println(segundaConta);
+
+
 
     }
 }
