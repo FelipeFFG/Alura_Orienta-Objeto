@@ -19,14 +19,14 @@ public class Conta {
           }
      }
 
-     public void sacar(double valor){         //sacar o dinheiro
+     public boolean sacar(double valor){         //sacar o dinheiro
           if (saldo < valor){
-               System.out.println("Saldo insuficiente");
+               return false;
           }else {
                saldo -=valor;
                System.out.println(saldo);
+               return true;
           }
      }
-
-
+     
 }
