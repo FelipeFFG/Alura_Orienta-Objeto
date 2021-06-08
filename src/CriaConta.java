@@ -36,6 +36,10 @@ public class CriaConta {
         Conta contaDoPaulo = new Conta();
         contaDoPaulo.saldo = 100;
         contaDoPaulo.depositar(50);
+        System.out.println(contaDoPaulo.saldo);
+        boolean conseguiuRetirar = contaDoPaulo.sacar(20);
+        System.out.println(contaDoPaulo.saldo);
+        System.out.println(conseguiuRetirar);
 
 
     }

@@ -7,7 +7,6 @@ public class Conta {
 
      public void depositar(double valor){    //depositar valor na conta
           saldo += valor;
-          System.out.println(saldo);
      }
      
      public void transeferir(Conta usuario,double valor){    //transferir valor para outra conta
@@ -24,9 +23,9 @@ public class Conta {
                return false;
           }else {
                saldo -=valor;
-               System.out.println(saldo);
                return true;
           }
      }
+
 
 }
