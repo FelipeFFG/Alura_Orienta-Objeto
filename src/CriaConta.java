@@ -36,11 +36,22 @@ public class CriaConta {
         Conta contaDoPaulo = new Conta();
         contaDoPaulo.saldo = 100;
         contaDoPaulo.depositar(50);
-        System.out.println(contaDoPaulo.saldo);
         boolean conseguiuRetirar = contaDoPaulo.sacar(20);
-        System.out.println(contaDoPaulo.saldo);
-        System.out.println(conseguiuRetirar);
+        System.out.println("P - "+ contaDoPaulo.saldo);
 
 
+
+        Conta contaDaMarcela = new Conta();
+        contaDaMarcela.depositar(160);
+        System.out.println( "M - " + contaDaMarcela.saldo);
+        contaDaMarcela.transeferir(contaDoPaulo,80);
+        System.out.println("P - "+ contaDoPaulo.saldo);
+        System.out.println( "M - " + contaDaMarcela.saldo);
+
+        if (contaDaMarcela.transeferir(contaDoPaulo,900)){
+            System.out.println("transferencia com sucesso");
+        }else{
+            System.out.println("faltou dinheiro");
+        }
     }
 }

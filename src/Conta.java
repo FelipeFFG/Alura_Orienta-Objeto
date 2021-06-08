@@ -9,12 +9,13 @@ public class Conta {
           saldo += valor;
      }
      
-     public void transeferir(Conta usuario,double valor){    //transferir valor para outra conta
+     public boolean transeferir(Conta usuario,double valor){    //transferir valor para outra conta
           if (saldo <valor){
-               System.out.println("nao foi possivel transferir");
+               return false;
           }else{
                usuario.depositar(valor);
                saldo =saldo-valor;
+               return true;
           }
      }
 
