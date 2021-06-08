@@ -1,7 +1,7 @@
 public class TestaBanco {
 
     public static void main(String[] args) {
-
+/*
         Cliente paulo  = new Cliente();
 
         paulo.nome = "Paulo silveira";
@@ -15,5 +15,8 @@ public class TestaBanco {
         // referenciado/linkando o cliente a conta
         contaDoPaulo.titular = paulo;
         System.out.println(contaDoPaulo.titular.nome);
+    }
+
+ */
     }
 }

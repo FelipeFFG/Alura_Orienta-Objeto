@@ -33,6 +33,8 @@ public class CriaConta {
         System.out.println(primeiraConta);
         System.out.println(segundaConta);
 */
+
+        /*
         Conta contaDoPaulo = new Conta();
         contaDoPaulo.saldo = 100;
         contaDoPaulo.depositar(50);
@@ -53,5 +55,8 @@ public class CriaConta {
         }else{
             System.out.println("faltou dinheiro");
         }
+    }
+
+         */
     }
 }

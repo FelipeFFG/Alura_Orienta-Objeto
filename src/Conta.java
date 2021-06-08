@@ -1,9 +1,9 @@
 public class Conta {
 
-     double saldo;
-     int agencia;
-     int numero;
-     Cliente titular;
+     private double saldo;
+     private int agencia;
+     private int numero;
+     private Cliente titular;
 
      public void depositar(double valor){    //depositar valor na conta
           saldo += valor;
