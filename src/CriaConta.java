@@ -19,7 +19,7 @@ public class CriaConta {
         System.out.println("primeira conta tem " + primeiraConta.saldo + " reais");
        System.out.println("segunda conta tem " + segundaConta.saldo + " reais");
 */
-
+         /*
         Conta primeiraConta = new Conta();
         primeiraConta.saldo=300;
         System.out.println("primeira conta  "+primeiraConta.saldo + " saldo ");
@@ -32,7 +32,10 @@ public class CriaConta {
         
         System.out.println(primeiraConta);
         System.out.println(segundaConta);
-
+*/
+        Conta contaDoPaulo = new Conta();
+        contaDoPaulo.saldo = 100;
+        contaDoPaulo.depositar(50);
 
 
     }
